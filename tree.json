@@ -1,0 +1,216 @@
+{
+  "name": "root",
+  "type": "directory",
+  "children": [
+    {
+      "name": "assets",
+      "type": "directory",
+      "children": [
+        {
+          "name": "img_submit.gif",
+          "type": "file",
+          "path": "assets/img_submit.gif"
+        }
+      ]
+    },
+    {
+      "name": "buoi1",
+      "type": "directory",
+      "children": [
+        {
+          "name": "BaiTapVeNha.html",
+          "type": "file",
+          "path": "buoi1/BaiTapVeNha.html"
+        },
+        {
+          "name": "DaiHocMo.html",
+          "type": "file",
+          "path": "buoi1/DaiHocMo.html"
+        },
+        {
+          "name": "DiemKieu.html",
+          "type": "file",
+          "path": "buoi1/DiemKieu.html"
+        },
+        {
+          "name": "KhanhAn.html",
+          "type": "file",
+          "path": "buoi1/KhanhAn.html"
+        },
+        {
+          "name": "NgocLam.html",
+          "type": "file",
+          "path": "buoi1/NgocLam.html"
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "buoi1/README.md"
+        },
+        {
+          "name": "ThanhLong.html",
+          "type": "file",
+          "path": "buoi1/ThanhLong.html"
+        },
+        {
+          "name": "app.js",
+          "type": "file",
+          "path": "buoi1/app.js"
+        },
+        {
+          "name": "audio-hQ5DFPQHnhw.webm",
+          "type": "file",
+          "path": "buoi1/audio-hQ5DFPQHnhw.webm"
+        },
+        {
+          "name": "b1.html",
+          "type": "file",
+          "path": "buoi1/b1.html"
+        },
+        {
+          "name": "chung.html",
+          "type": "file",
+          "path": "buoi1/chung.html"
+        },
+        {
+          "name": "imgs",
+          "type": "directory",
+          "children": [
+            {
+              "name": "HoatDongCLB_TheOpenClub2022.jpg",
+              "type": "file",
+              "path": "buoi1/imgs/HoatDongCLB_TheOpenClub2022.jpg"
+            },
+            {
+              "name": "Khong_Co_Tieu_e92_20240307151629.png",
+              "type": "file",
+              "path": "buoi1/imgs/Khong_Co_Tieu_e92_20240307151629.png"
+            },
+            {
+              "name": "doraemon_2.png.jpg",
+              "type": "file",
+              "path": "buoi1/imgs/doraemon_2.png.jpg"
+            }
+          ]
+        },
+        {
+          "name": "inner",
+          "type": "directory",
+          "children": [
+            {
+              "name": "b2.html",
+              "type": "file",
+              "path": "buoi1/inner/b2.html"
+            }
+          ]
+        },
+        {
+          "name": "nghe_nhac.html",
+          "type": "file",
+          "path": "buoi1/nghe_nhac.html"
+        }
+      ]
+    },
+    {
+      "name": "buoi2",
+      "type": "directory",
+      "children": [
+        {
+          "name": "NationalGeographic_2572187_16x9.avif",
+          "type": "file",
+          "path": "buoi2/NationalGeographic_2572187_16x9.avif"
+        },
+        {
+          "name": "banh-mi.mp4",
+          "type": "file",
+          "path": "buoi2/banh-mi.mp4"
+        },
+        {
+          "name": "bt",
+          "type": "directory",
+          "children": [
+            {
+              "name": "diem-kieu-form",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "login.html",
+                  "type": "file",
+                  "path": "buoi2/bt/diem-kieu-form/login.html"
+                }
+              ]
+            },
+            {
+              "name": "khanh-an-form",
+              "type": "directory",
+              "children": []
+            },
+            {
+              "name": "ngoc-lam-form",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "login.html",
+                  "type": "file",
+                  "path": "buoi2/bt/ngoc-lam-form/login.html"
+                }
+              ]
+            },
+            {
+              "name": "thanh-long-form",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "login.html",
+                  "type": "file",
+                  "path": "buoi2/bt/thanh-long-form/login.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bt_anphan.html",
+          "type": "file",
+          "path": "buoi2/bt_anphan.html"
+        },
+        {
+          "name": "bt_kieuz.html",
+          "type": "file",
+          "path": "buoi2/bt_kieuz.html"
+        },
+        {
+          "name": "bt_thanhlong.html",
+          "type": "file",
+          "path": "buoi2/bt_thanhlong.html"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "directory",
+      "children": [
+        {
+          "name": "login.html",
+          "type": "file",
+          "path": "form/login.html"
+        },
+        {
+          "name": "register.html",
+          "type": "file",
+          "path": "form/register.html"
+        }
+      ]
+    },
+    {
+      "name": "form.html",
+      "type": "file",
+      "path": "form.html"
+    },
+    {
+      "name": "index.html",
+      "type": "file",
+      "path": "index.html"
+    }
+  ]
+}
