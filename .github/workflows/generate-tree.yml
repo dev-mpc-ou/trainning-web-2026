@@ -1,0 +1,75 @@
+name: Generate File Tree JSON
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'tree.json'
+      - '.github/**'
+
+jobs:
+  generate-tree:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate tree.json
+        run: |
+          python3 - << 'PYEOF'
+          import os
+          import json
+
+          EXCLUDE_DIRS = {'.git', '.github', 'node_modules', '__pycache__'}
+          EXCLUDE_FILES = {'tree.json', '.gitignore', '.gitkeep', 'CNAME'}
+
+          def build_tree(rel_path=""):
+              entries = sorted(os.listdir(rel_path or "."))
+              children = []
+
+              for name in entries:
+                  if name in EXCLUDE_DIRS or name.startswith('.git'):
+                      continue
+                  if name in EXCLUDE_FILES:
+                      continue
+
+                  full = os.path.join(rel_path, name) if rel_path else name
+                  norm = full.replace("\\", "/")
+
+                  if os.path.isdir(full):
+                      subtree = build_tree(full)
+                      subtree["name"] = name
+                      children.append(subtree)
+                  else:
+                      children.append({
+                          "name": name,
+                          "type": "file",
+                          "path": norm
+                      })
+
+              return {
+                  "name": rel_path if rel_path else "root",
+                  "type": "directory",
+                  "children": children
+              }
+
+          tree = build_tree()
+          with open("tree.json", "w", encoding="utf-8") as f:
+              json.dump(tree, f, ensure_ascii=False, indent=2)
+          print("tree.json generated successfully")
+          PYEOF
+
+      - name: Commit and push tree.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tree.json
+          if git diff --staged --quiet; then
+            echo "No changes to tree.json"
+          else
+            git commit -m "Update tree.json [skip ci]"
+            git push
+          fi

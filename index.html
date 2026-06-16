@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cây thư mục - Train Web</title>
+</head>
+
+<body>
+    <h1>📁 Danh sách các trang</h1>
+    <ul id="tree"></ul>
+
+    <script>
+        async function loadTree() {
+            try {
+                const response = await fetch('tree.json');
+                if (!response.ok) throw new Error('Không tìm thấy tree.json');
+                const data = await response.json();
+                const treeEl = document.getElementById('tree');
+                treeEl.innerHTML = '';
+                renderTree(data, treeEl);
+            } catch (err) {
+                document.getElementById('tree').innerHTML =
+                    '<li>Không thể tải danh sách file. Vui lòng thử lại sau.</li>';
+            }
+        }
+
+        function renderTree(node, parentEl) {
+            if (!node.children) return;
+
+            node.children.forEach(function (child) {
+                var li = document.createElement('li');
+
+                if (child.type === 'directory') {
+                    li.textContent = '📂 ' + child.name;
+                    var ul = document.createElement('ul');
+                    li.appendChild(ul);
+                    renderTree(child, ul);
+                } else {
+                    var a = document.createElement('a');
+                    a.href = child.path;
+                    a.textContent = '📄 ' + child.name;
+                    a.target = '_blank';
+                    li.appendChild(a);
+                }
+
+                parentEl.appendChild(li);
+            });
+        }
+
+        loadTree();
+    </script>
+</body>
+
+</html>
