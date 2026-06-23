@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+            padding: 100px;
+        }
+
+        .login-container {
+            background-color: rgb(70, 70, 70);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            color: rgb(253, 253, 253);
+            border: 1px dashed white;
+            border-bottom-width: 5px;
+            padding: 16px 32px
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 3px solid #2927d6;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1 style="color: #f02e2e; text-align: center;"><em>Đăng Nhập</em></h1>
+        <p><em><small>Vui lòng nhập thông tin tài khoản của bạn để đăng nhập vào hệ thống.</small></em></p>
+        <form action="https://basic-web-training.vercel.app/api/practice/submit/login" method="POST">
+            <input type="hidden" name="formType" value="login">
+
+            <label for="email">Email:</label><br>
+            <input class="form-group" type="email" id="email" name="email" placeholder="vidu@email.com"
+                required><br><br>
+
+            <label for="password">Mật khẩu:</label><br>
+            <input class="form-group" type="password" id="password" name="password" minlength="6"
+                placeholder="Ít nhất 6 ký tự" required><br><br>
+
+            <input type="checkbox" id="remember" name="remember" value="1" checked>
+            <label for="remember">Ghi nhớ đăng nhập</label><br><br>
+
+            <input type="submit" value="Đăng nhập">
+
+            <p><small>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></small></p>
+            <p><small>Quên mật khẩu? <a href="#">Khôi phục tại đây</a></small></p>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
