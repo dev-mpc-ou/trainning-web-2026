@@ -141,9 +141,14 @@
               ]
             },
             {
-              "name": "khanh-an-form",
-              "type": "directory",
-              "children": []
+              "name": "form.html",
+              "type": "file",
+              "path": "buoi2/bt/form.html"
+            },
+            {
+              "name": "index.html",
+              "type": "file",
+              "path": "buoi2/bt/index.html"
             },
             {
               "name": "ngoc-lam-form",
@@ -187,6 +192,83 @@
       ]
     },
     {
+      "name": "buoi3",
+      "type": "directory",
+      "children": [
+        {
+          "name": "baitap1",
+          "type": "directory",
+          "children": [
+            {
+              "name": "AnPhan",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file",
+                  "path": "buoi3/baitap1/AnPhan/index.html"
+                }
+              ]
+            },
+            {
+              "name": "DiemKieu",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file",
+                  "path": "buoi3/baitap1/DiemKieu/index.html"
+                }
+              ]
+            },
+            {
+              "name": "NgocLam",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file",
+                  "path": "buoi3/baitap1/NgocLam/index.html"
+                },
+                {
+                  "name": "style.css",
+                  "type": "file",
+                  "path": "buoi3/baitap1/NgocLam/style.css"
+                }
+              ]
+            },
+            {
+              "name": "ThanhLong",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file",
+                  "path": "buoi3/baitap1/ThanhLong/index.html"
+                }
+              ]
+            },
+            {
+              "name": "sample",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file",
+                  "path": "buoi3/baitap1/sample/index.html"
+                },
+                {
+                  "name": "style.css",
+                  "type": "file",
+                  "path": "buoi3/baitap1/sample/style.css"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "form",
       "type": "directory",
       "children": [
@@ -201,11 +283,6 @@
           "path": "form/register.html"
         }
       ]
-    },
-    {
-      "name": "form.html",
-      "type": "file",
-      "path": "form.html"
     },
     {
       "name": "index.html",
