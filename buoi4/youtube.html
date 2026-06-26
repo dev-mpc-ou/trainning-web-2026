@@ -72,6 +72,25 @@
             flex-wrap: wrap;
         }
 
+        #loading {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 8px solid #ff0000;
+            border-top: 8px solid #ffffff;
+            animation: loading 1s infinite linear;
+        }
+
+        @keyframes loading {
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
         @media screen and (max-width: 1224px) {
             .card {
                 width: calc(50% - 16px);
@@ -87,10 +106,13 @@
                 width: 100%;
             }
         }
+        
     </style>
 </head>
 
 <body>
+    <div id="loading"></div>
+
     <header class="flex">
         <div class="flex">
             <img width="48px" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
