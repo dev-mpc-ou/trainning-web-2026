@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table1 td,
+        table#table1,
+        #table1 th {
+            border: 2px solid #000;
+            padding: 10px;
+        }
+
+        table#table1 {
+            border-collapse: collapse;
+        }
+
+        tbody tr td:nth-child(2),
+        tbody tr td:nth-child(3),
+        tbody tr td:nth-child(4) {
+            text-align: right;
+        }
+
+        .table-container {
+            overflow-x: scroll;
+        }
+
+        a:hover{
+            color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bảng số liệu doanh thu</h1>
+    <a href="http://google.com" target="_blank" rel="noopener noreferrer">Google</a>
+    <div class="table-container">
+        <table id="table1">
+            <thead>
+                <tr>
+                    <th style="width: 100px">Tháng</th>
+                    <th style="width: 200px">Doanh thu (triệu VNĐ)</th>
+                    <th style="width: 200px">Lợi nhuận (triệu VNĐ)</th>
+                    <th style="width: 50px">Số lượng đơn hàng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tháng 1</td>
+                    <td>120</td>
+                    <td>30</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Tháng 2</td>
+                    <td>140</td>
+                    <td>35</td>
+                    <td>170</td>
+                </tr>
+                <tr>
+                    <td>Tháng 3</td>
+                    <td>160</td>
+                    <td>42</td>
+                    <td>190</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Tổng cộng</td>
+                    <td>420</td>
+                    <td>107</td>
+                    <td>510</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

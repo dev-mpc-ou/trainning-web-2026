@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .p-box {
+            width: 900px;
+            height: 900px;
+            background-color: rgb(24, 86, 82);
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            transition: width 1s 1s ;
+        }
+
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(45deg);
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(30, 255, 0);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            transform: translateX(-100px) translatey(-100px) scale(0.5);
+        }
+
+
+
+        #to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+        }
+
+        header {
+            background-color: blue;
+            height: 4rem;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 100%;
+        }
+
+        .ads {
+            width: 100px;
+            height: 200px;
+            background-color: aquamarine;
+            position: sticky;
+            top: 5rem;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <img class="cat-spin-meme" style="width: 200px;"
+        src="https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/oA90SAAnnDBCLfXoCoFEQEDoE6AR0iAIESfhJN~tplv-tiktokx-origin.image?dr=9636&x-expires=1782525600&x-signature=yPG32%2BRe5r5bzuzt%2BEVr3E8RWOM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=55bbe6a9&idc=useast8"
+        alt="">
+    <header>
+        <img src="../assets/img_submit.gif" alt="">
+        <button>Login</button>
+    </header>
+    <div id="to-top">
+        <button>
+            Bấm để lên trên
+        </button>
+    </div>
+
+
+
+    <div style="display: flex;">
+        <div class="p-box">
+            <div class="box"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="ads">
+            ở đây có quản cáo
+        </div>
+    </div>
+</body>
+
+</html>

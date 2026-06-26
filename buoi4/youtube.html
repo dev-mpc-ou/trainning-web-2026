@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            width: 100%;
+            align-items: center;
+            padding:8px 32px ;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        .search-box {
+            gap:0px;
+        }
+
+        button {
+            padding: 8px;
+            background-color: #727272;
+            color: aliceblue;
+            border: none;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            width: 32px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b7b7b7;
+        }
+
+        .card {
+            height: 300px;
+            width: 32%;
+            background-color: aqua;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            /* flex-shrink: 0; */
+        }
+
+        main {
+            align-items: start !important;
+            padding: 16px 32px;
+        }
+
+        #nav{
+            width: 300px;
+        }
+
+        #content {
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 1224px) {
+            .card {
+                width: calc(50% - 16px);
+            }
+        }
+
+
+        @media screen and (max-width: 768px) {
+            #nav {
+                width: 10px;
+            }
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex">
+        <div class="flex">
+            <img width="48px" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+                alt="Logo Youtube" srcset="">
+            <span>Youtube</span>
+        </div>
+
+
+        <form method="get" class="flex search-box">
+            <input type="search" name="" id="">
+            <button><i class="bi bi-search"></i></button>
+        </form>
+
+        <div class="flex">
+            <button><i class="bi bi-upload"></i></button>
+            <button><i class="bi bi-bell"></i></button>
+            <img style="width: 50px; border-radius: 50%;"
+                src="https://images-ext-1.discordapp.net/external/bd6MyfyLbNmzsPwpf1a4QBWyD2N3B5Knv-lsYluxySE/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/732157441889927239/98cf35fd628a050f43af4f504d10449e.webp?format=webp&width=789&height=789"
+                alt="" srcset="">
+        </div>
+
+    </header>
+    <main class="flex">
+        <section id="nav" >
+            <ul>
+                <li><i class="bi bi-house"></i>Trang chủ</li>
+                <li>Trending</li>
+                <li>Short</li>
+                <hr>
+                <li>PL1</li>
+                <li>PL2</li>
+            </ul>
+        </section>
+        <section id="content"  class="flex">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </section>
+    </main>
+</body>
+
+</html>
