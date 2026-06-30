@@ -305,6 +305,95 @@
       ]
     },
     {
+      "name": "buoi5",
+      "type": "directory",
+      "children": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "children": [
+            {
+              "name": "css",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "home.css",
+                  "type": "file",
+                  "path": "buoi5/assets/css/home.css"
+                },
+                {
+                  "name": "style.css",
+                  "type": "file",
+                  "path": "buoi5/assets/css/style.css"
+                }
+              ]
+            },
+            {
+              "name": "imgs",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "banner.png",
+                  "type": "file",
+                  "path": "buoi5/assets/imgs/banner.png"
+                },
+                {
+                  "name": "cat.jpg",
+                  "type": "file",
+                  "path": "buoi5/assets/imgs/cat.jpg"
+                },
+                {
+                  "name": "download.webp",
+                  "type": "file",
+                  "path": "buoi5/assets/imgs/download.webp"
+                },
+                {
+                  "name": "fileManager.png",
+                  "type": "file",
+                  "path": "buoi5/assets/imgs/fileManager.png"
+                },
+                {
+                  "name": "logo-ou.webp",
+                  "type": "file",
+                  "path": "buoi5/assets/imgs/logo-ou.webp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dkmh.html",
+          "type": "file",
+          "path": "buoi5/dkmh.html"
+        },
+        {
+          "name": "hocphi.html",
+          "type": "file",
+          "path": "buoi5/hocphi.html"
+        },
+        {
+          "name": "index.html",
+          "type": "file",
+          "path": "buoi5/index.html"
+        },
+        {
+          "name": "thesinhvien.html",
+          "type": "file",
+          "path": "buoi5/thesinhvien.html"
+        },
+        {
+          "name": "thongtinsinhvien.html",
+          "type": "file",
+          "path": "buoi5/thongtinsinhvien.html"
+        },
+        {
+          "name": "xemdiem.html",
+          "type": "file",
+          "path": "buoi5/xemdiem.html"
+        }
+      ]
+    },
+    {
       "name": "form",
       "type": "directory",
       "children": [
